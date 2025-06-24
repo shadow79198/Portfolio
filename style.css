@@ -7,3 +7,29 @@ li{
     margin: 5px;
     padding-right: 5px;
 }
+body{
+    background-color: #CAFFD0;
+    color: #5C090E;
+}
+/* .case-study, .About-me{
+    display: none;
+} */
+.start-page, .information, .second-section{
+    display: flex;
+    justify-content: space-around;
+}
+.no-color-div{
+    display: flex;
+    justify-content: center;
+}
+.projects{
+    display: flex;
+    justify-content: flex-start;
+}
+.projects p, .projects button, .projects img{
+    padding-right: 2%;
+    padding-left: 2%;
+}
+img{
+    width: 20%;
+}
