@@ -8,12 +8,18 @@ li{
     padding-right: 5px;
 }
 body{
-    background-color: #CAFFD0;
     color: #5C090E;
+    /* background-color: #1E212B; */
+    background-color: #4F66C6;
+    animation-name: startChange;
+    animation-duration: 8s;
 }
-/* .case-study, .About-me{
+    /* 100%{background-color:#E70E02;} */
+    /* 100%{background-color: #CAFFD0;} */
+
+.case-study, .About-me, .first{
     display: none;
-} */
+}
 .start-page, .information, .second-section{
     display: flex;
     justify-content: space-around;
@@ -38,4 +44,25 @@ html{
 }
 img{
     width: 10%;
+}
+.open{
+    display: flex;
+    justify-content: center; 
+}
+#startButton{
+    margin-top: 18%;
+}
+
+.action{
+    display: none;
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.not-avaliable{
+    filter: grayscale(1.0);
+}
+.errorMsg{
+    display: none;
 }
