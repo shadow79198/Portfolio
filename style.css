@@ -17,14 +17,14 @@ body{
     /* 100%{background-color:#E70E02;} */
     /* 100%{background-color: #CAFFD0;} */
 
-.case-study, .About-me, .first{
+/* .case-study, .about-me, .first{
     display: none;
-}
+} */
 .start-page, .information, .second-section{
     display: flex;
     justify-content: space-around;
 }
-.no-color-div{
+.image{
     display: flex;
     justify-content: center;
 }
@@ -40,7 +40,8 @@ img{
     width: 20%;
 }
 html{
-    margin:10px;
+    margin:2%;
+    margin-top: 0%;
 }
 img{
     width: 10%;
@@ -62,7 +63,15 @@ img{
 }
 .not-avaliable{
     filter: grayscale(1.0);
+    height: 50%;
+    width: 50%;
 }
-.errorMsg{
+#errorMsg{
     display: none;
+}
+.text{
+    margin-right: 10%;
+}
+h2{
+    font-size: 20px;
 }
