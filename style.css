@@ -60,7 +60,7 @@ html{
     height: 50%;
     width: 50%;
 }
-#errorMsg{
+#errorMsg, .second-section button{
     display: none;
 }
 .text{

@@ -120,6 +120,8 @@ videos = document.querySelector(".videos")
 imgFinal = document.querySelector("#final-img")
 hideLast = document.querySelector(".last-hide")
 colorCheck =  false
+leftButton = document.querySelector("#button-left")
+rightButton = document.querySelector("#button-right")
 
 imgFinal.addEventListener("click", function() {
     alert("You haven't got all colors, try finding them")
@@ -142,6 +144,8 @@ async function checkColors() {
     imgFinal.style.display = "none"
     videos.style.display = "block"
     hideLast.style.display = "block"
+    leftButton.style.display = "block"
+    rightButton.style.display = "block"
 }
 
 checkColors()
@@ -159,3 +163,29 @@ checkColors()
 //     console.log("end")    
 // }
 // wait()
+
+// different clips to display
+const show = ["videos/funny.mp4", "videos/combo.mp4", "videos/bully.mp4"]
+pos = 0
+clips = document.querySelector("#clips")
+
+rightButton.addEventListener("click", function() {
+    pos++
+    if(pos>2){
+        pos = 0
+    }
+    clips.src = show[pos]
+    videos.load()
+    console.log(pos)
+    console.log(show[pos])
+})
+leftButton.addEventListener("click", function() {
+    pos--
+    if(pos<0){
+        pos = 2
+    }
+    clips.src = show[pos]
+    videos.load()
+    console.log(pos)
+    console.log(show[pos])
+})
