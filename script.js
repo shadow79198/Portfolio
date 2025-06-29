@@ -76,8 +76,35 @@ videos = document.querySelector("#videos")
 imgFinal = document.querySelector ("#final-img")
 colorCheck =  false
 
-// while (colorCheck === false){
-//     if(greenCheck === true && purpleCheck === true && blueCheck === true){
-//         colorCheck = true
-//     }
+
+function sleep(ms){
+    return new Promise(resolve => setTimeout(resolve,ms))
+}
+
+async function checkColors() {
+    while (colorCheck === false){
+        if(greenCheck === true && purpleCheck === true && blueCheck === true){
+            colorCheck = true
+            break
+            }
+        console.log("not all colors are collected yet")
+        await sleep(10000)
+        }
+    console.log("all colors are collected")
+}
+
+checkColors()
+
+//Learned this from https://www.geeksforgeeks.org/javascript/how-to-wait-n-seconds-in-javascript/ and https://softwareshorts.com/how-to-make-a-loop-wait-in-javascript/
+//example im using
+
+// function sleep(ms){
+//     return new Promise(resolve => setTimeout(resolve,ms));
 // }
+
+// async function wait() {
+//     console.log("start")
+//     await sleep(10000)
+//     console.log("end")    
+// }
+// wait()
