@@ -38,7 +38,6 @@ moveSecond.addEventListener("click", function() {
 })
 
 // case study page
-// remember to add the buttons
 
 moveThird = document.querySelector("#third-move")
 
@@ -46,3 +45,39 @@ moveThird.addEventListener("click", function() {
     studyCase.style.display = "none"
     meAbout.style.display = "block"
 })
+
+// color check part
+
+green = document.querySelector("#green")
+purple = document.querySelector("#purple")
+blue = document.querySelector("#blue")
+greenCheck = false
+purpleCheck = false
+blueCheck = false
+
+green.addEventListener("click", function() {
+    greenCheck = true
+    alert("You got the color green")
+    console.log(greenCheck)
+})
+purple.addEventListener("click", function() {
+    purpleCheck = true
+    alert("You got the color purple")
+    console.log(purpleCheck)
+})
+blue.addEventListener("click", function() {
+    blueCheck = true
+    alert("You got the color blue")
+    console.log(blueCheck)
+})
+// code running at the end to display the video
+
+videos = document.querySelector("#videos")
+imgFinal = document.querySelector ("#final-img")
+colorCheck =  false
+
+// while (colorCheck === false){
+//     if(greenCheck === true && purpleCheck === true && blueCheck === true){
+//         colorCheck = true
+//     }
+// }

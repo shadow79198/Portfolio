@@ -10,7 +10,8 @@ li{
 body{
     color: #5C090E;
     /* background-color: #1E212B; */
-    background-color: #4F66C6;
+    /* background-color: #4F66C6; */
+    background-color: #CAFFD0;
     animation-name: startChange;
     animation-duration: 8s;
 }
@@ -32,21 +33,22 @@ body{
     display: flex;
     justify-content: flex-start;
 }
-.projects p, .projects button, .projects img{
+.projects p, .projects img, .projects video{
     padding-right: 2%;
     padding-left: 2%;
 }
-img{
+.projects img, .projects video{
     width: 20%;
+    height: 20%;
+}
+img{
+    width: 10%;
 }
 html{
     margin:2%;
     margin-top: 0%;
 }
-img{
-    width: 10%;
-}
-.open{
+.open, .center-image{
     display: flex;
     justify-content: center; 
 }
@@ -74,4 +76,18 @@ img{
 }
 h2{
     font-size: 20px;
+}
+video{
+    width: 50%;
+    height: 50%;
+}
+.last-hide{
+    padding-left: 2%;
+}
+.input-part{
+    display: flex;
+    justify-content: flex-start;
+}
+.videos{
+    display: none;
 }
