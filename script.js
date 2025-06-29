@@ -41,6 +41,32 @@ moveSecond.addEventListener("click", function() {
 
 moveThird = document.querySelector("#third-move")
 
+oneTextProject = document.querySelector("#project-one-text")
+oneButtonProject = document.querySelector("#project-one-button")
+twoTextProject = document.querySelector("#project-two-text")
+twoButtonProject = document.querySelector("#project-two-button")
+threeTextProject = document.querySelector("#project-three-text")
+threeButtonProject = document.querySelector("#project-three-button")
+fourTextProject = document.querySelector("#project-four-text")
+fourButtonProject = document.querySelector("#project-four-button")
+
+oneButtonProject.addEventListener("mouseover", function() {
+    oneTextProject.style.display = "block"
+})
+
+twoButtonProject.addEventListener("mouseover", function() {
+    twoTextProject.style.display = "block"
+})
+
+threeButtonProject.addEventListener("mouseover", function() {
+    threeTextProject.style.display = "block"
+})
+
+fourButtonProject.addEventListener("mouseover", function() {
+    fourTextProject.style.display = "block"
+})
+
+
 moveThird.addEventListener("click", function() {
     studyCase.style.display = "none"
     meAbout.style.display = "block"
@@ -72,10 +98,14 @@ blue.addEventListener("click", function() {
 })
 // code running at the end to display the video
 
-videos = document.querySelector("#videos")
-imgFinal = document.querySelector ("#final-img")
+videos = document.querySelector(".videos")
+imgFinal = document.querySelector("#final-img")
+hideLast = document.querySelector(".last-hide")
 colorCheck =  false
 
+imgFinal.addEventListener("click", function() {
+    alert("You haven't got all colors, try finding them")
+})
 
 function sleep(ms){
     return new Promise(resolve => setTimeout(resolve,ms))
@@ -88,9 +118,12 @@ async function checkColors() {
             break
             }
         console.log("not all colors are collected yet")
-        await sleep(10000)
+        await sleep(2000)
         }
     console.log("all colors are collected")
+    imgFinal.style.display = "none"
+    videos.style.display = "block"
+    hideLast.style.display = "block"
 }
 
 checkColors()

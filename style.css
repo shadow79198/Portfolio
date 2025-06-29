@@ -83,11 +83,15 @@ video{
 }
 .last-hide{
     padding-left: 2%;
+    display: none;
 }
 .input-part{
     display: flex;
     justify-content: flex-start;
 }
 .videos{
+    display: none;
+}
+#project-one-text, #project-two-text, #project-three-text, #project-four-text{
     display: none;
 }
