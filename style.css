@@ -55,14 +55,6 @@ html{
 #startButton{
     margin-top: 18%;
 }
-
-.action{
-    display: none;
-}
-.buttons{
-    display: flex;
-    justify-content: space-around;
-}
 .not-avaliable{
     filter: grayscale(1.0);
     height: 50%;

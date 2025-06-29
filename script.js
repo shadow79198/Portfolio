@@ -1,10 +1,7 @@
 //buttons used to move
 buttonStart = document.querySelector(".startButton")
-advance = document.querySelector("#advance")
-end = document.querySelector("#end")
 
 //different div pages being used
-action = document.querySelector(".action")
 open = document.querySelector(".open")
 first = document.querySelector(".first")
 studyCase = document.querySelector(".case-study")
@@ -13,15 +10,9 @@ meAbout = document.querySelector(".about-me")
 //start of the program to move
 
 buttonStart.addEventListener("click", function() {
-    action.style.display = "grid"
-    action.style.justifyContent = "center"
-    action.style.textAlign = "center"
+    alert("Access Denied. Entering as guest")
     open.style.display = "none"
-})
-
-advance.addEventListener("click", function() {
     first.style.display = "block"
-    action.style.display = "none"
 })
 //first page variables and buttons usable
 
@@ -30,7 +21,9 @@ avaliableNot =  document.querySelector(".not-avaliable")
 moveSecond = document.querySelector("#second-move")
 
 avaliableNot.addEventListener("click", function() {
-    msgError.style.display = "block"
+    alert("It seems that the video is not working properly, it must be because of the missing colors in the image, in the whole webpage the creator has left some colors for you to find them, in the end you will be able to see what each color means. Here is a gift for you, the color green")
+    greenCheck = true
+    console.log(greenCheck)
 })
 moveSecond.addEventListener("click", function() {
     first.style.display = "none"
@@ -72,20 +65,45 @@ moveThird.addEventListener("click", function() {
     meAbout.style.display = "block"
 })
 
+//SQL part
+
+givenColor = document.querySelector("#color-given")
+RunSQL = document.querySelector("#SQL-run")
+colorSQL = document.querySelector("#SQL-color")
+meaningSQL = document.querySelector("#SQL-meaning")
+
+RunSQL.addEventListener("click", function() {
+    check = givenColor.value
+    if(check === "green" && greenCheck === true){
+        colorSQL.innerHTML = "green|"
+        meaningSQL.innerHTML = "I chose green because it has been my favorite colors for multiple years, its always associated with nature but for me its also of peace, internal peace to be more specific. Sometimes I just like something because it has green on it, is just that important for me"
+    }else if (check === "green" && greenCheck === false){
+        alert("I don't know how you know this is a color but go find it")
+    }else if (check === "purple" && purpleCheck === true){
+        colorSQL.innerHTML = "purple|"
+        meaningSQL.innerHTML = "Purple is the favorite color of one of my friends, and honestly its also becoming mine. When I see color it reminds me of past wounds, more specific of bruises, but like those wounds it is that memory that makes you stand up and fight again"
+    }else if (check == "purple" && purpleCheck === false){
+        alert("I don't know how you know this is a color but go find it")
+    }else if (check === "blue" && blueCheck === true){
+        colorSQL.innerHTML = "blue|"
+        meaningSQL.innerHTML = "Reason why I chose blue it was because it reminds me of two things. First is my favorite artist, Ado, I usually hear one of her songs everyday because is just that good for me. Second reason why is because it reminds me of being free, of not worrying about what others would say about what you like or who you are, etc."
+    }else if (check === "blue" && blueCheck === false){
+        alert("I don't know how you know this is a color but go find it")
+    }else{
+        alert("This isn't one of the missing colors")
+    }
+})
+
+
+
 // color check part
 
-green = document.querySelector("#green")
 purple = document.querySelector("#purple")
 blue = document.querySelector("#blue")
 greenCheck = false
 purpleCheck = false
 blueCheck = false
 
-green.addEventListener("click", function() {
-    greenCheck = true
-    alert("You got the color green")
-    console.log(greenCheck)
-})
 purple.addEventListener("click", function() {
     purpleCheck = true
     alert("You got the color purple")

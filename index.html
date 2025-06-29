@@ -20,23 +20,9 @@
         <img class="startButton" src="images/startButton.png">
     </div>
 
-    <div class="action">
-        <div style="background-color: antiquewhite;">
-            <h1>Access Denied</h1>
-            <h2>Do you want to access as a guest?</h2>
-            <div class="buttons">
-                <button id="advance">Yes</button>
-                <button id="end">No</button>
-            </div>
-        </div>
-    </div>
-
     <!-- first section of the webpage -->
     <div class="first">
         <div>
-            <div class="start">
-                <h1>Hello</h1>
-            </div>
             <div>
                 <h1>William Rodriguez Cortez</h1>
                 <br>
@@ -62,9 +48,6 @@
             <div class="image">
                 <img class="not-avaliable" src="images/noColor.png">
             </div>
-            <p id="errorMsg" style="text-align: center;">It seems that the video is not working properly, it must be because of the missing colors in the
-                    image, in the whole webpage the creator has left some colors for you to find them, in the end you
-                    will be able to see what each color means. Here is a gift for you, the color <strong id="green">green</strong></p>
             <button id="second-move">Case study</button>
             <br>
         </div>
@@ -145,11 +128,12 @@
             <div>
                 <h3>CREATE TABLE colorMeaning (color TEXT, meaning TEXT);</h3>
                 <div class="input-part">
-                    <p>SELECT * FROM colorMeaning WHERE color == <input>;</p>
+                    <p>SELECT * FROM colorMeaning WHERE color == <input id="color-given">;</p>
                 </div>
+                <button id="SQL-run">Run</button>
             </div>
             <div class="input-part">
-                <p>color|</p><p>meaning</p>
+                <p id="SQL-color">color|</p><p id="SQL-meaning">meaning</p>
             </div>
         </div>
         <br>
