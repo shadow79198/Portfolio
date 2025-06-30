@@ -9,14 +9,10 @@ li{
 }
 body{
     color: #5C090E;
-    /* background-color: #1E212B; */
-    /* background-color: #4F66C6; */
     background-color: #CAFFD0;
     animation-name: startChange;
     animation-duration: 8s;
 }
-    /* 100%{background-color:#E70E02;} */
-    /* 100%{background-color: #CAFFD0;} */
 
 /* .case-study, .about-me, .first{
     display: none;
@@ -80,6 +76,7 @@ video{
 .input-part{
     display: flex;
     justify-content: flex-start;
+    padding-left: 5%;
 }
 .videos{
     display: none;
@@ -87,3 +84,13 @@ video{
 #project-one-text, #project-two-text, #project-three-text, #project-four-text{
     display: none;
 }
+#SQL-run{
+    display: block;
+}
+#color-given{
+    background-color: initial;
+    border: none;
+}
+    /* background-color: #1E212B;  black*/
+            /* background-color: #4F66C6;  blue*/
+            /* background-color:#E70E02; red */
