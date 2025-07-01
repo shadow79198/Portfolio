@@ -1,3 +1,24 @@
+//nav bar move
+moveFirst = document.querySelector("#first-move")
+moveSecond = document.querySelector("#second-move") 
+moveThird = document.querySelector("#third-move")
+
+moveFirst.addEventListener("click", function() {
+    studyCase.style.display = "none"
+    meAbout.style.display = "none"
+    first.style.display = "block"
+})
+moveSecond.addEventListener("click", function() {
+    first.style.display = "none"
+    meAbout.style.display = "none"
+    studyCase.style.display = "block"
+}) 
+moveThird.addEventListener("click", function() {
+    studyCase.style.display = "none"
+    first.style.display = "none"
+    meAbout.style.display = "block"
+})
+
 //buttons used to move
 buttonStart = document.querySelector(".startButton")
 
@@ -6,6 +27,7 @@ open = document.querySelector(".open")
 first = document.querySelector(".first")
 studyCase = document.querySelector(".case-study")
 meAbout = document.querySelector(".about-me")
+navegation = document.querySelector(".navegation")
 
 //start of the program to move
 
@@ -13,26 +35,20 @@ buttonStart.addEventListener("click", function() {
     alert("Access Denied. Entering as guest")
     open.style.display = "none"
     first.style.display = "block"
+    navegation.style.display = "block"
 })
 //first page variables and buttons usable
 
 msgError = document.querySelector("#errorMsg")
 avaliableNot =  document.querySelector(".not-avaliable")
-moveSecond = document.querySelector("#second-move")
 
 avaliableNot.addEventListener("click", function() {
     alert("It seems that the video is not working properly, it must be because of the missing colors in the image, in the whole webpage the creator has left some colors for you to find them, in the end you will be able to see what each color means. Here is a gift for you, the color green")
     greenCheck = true
     console.log(greenCheck)
 })
-moveSecond.addEventListener("click", function() {
-    first.style.display = "none"
-    studyCase.style.display = "block"
-})
 
 // case study page
-
-moveThird = document.querySelector("#third-move")
 
 oneTextProject = document.querySelector("#project-one-text")
 oneButtonProject = document.querySelector("#project-one-button")
@@ -57,12 +73,6 @@ threeButtonProject.addEventListener("mouseover", function() {
 
 fourButtonProject.addEventListener("mouseover", function() {
     fourTextProject.style.display = "block"
-})
-
-
-moveThird.addEventListener("click", function() {
-    studyCase.style.display = "none"
-    meAbout.style.display = "block"
 })
 
 //SQL part

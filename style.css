@@ -1,11 +1,13 @@
 ul{
     display: flex;
     flex-direction:row;
-    justify-content: center;
+    justify-content: space-around;
+    list-style-type: none;
 }
 li{
-    margin: 5px;
-    padding-right: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin: 1%;
 }
 body{
     color: #5C090E;
@@ -14,9 +16,9 @@ body{
     animation-duration: 8s;
 }
 
-/* .case-study, .about-me, .first{
+.case-study, .about-me, .first{
     display: none;
-} */
+}
 .start-page, .information, .second-section{
     display: flex;
     justify-content: space-around;
@@ -30,8 +32,8 @@ body{
     justify-content: flex-start;
 }
 .projects p, .projects img, .projects video{
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 .projects img, .projects video{
     width: 20%;
@@ -90,6 +92,15 @@ video{
 #color-given{
     background-color: initial;
     border: none;
+    width: 12%;
+}
+.navegation{
+    display: none;
+    background-color: #C9FFF4;
+    padding: 0%;
+    margin: 0%;
+    border: 2px solid;
+
 }
     /* background-color: #1E212B;  black*/
             /* background-color: #4F66C6;  blue*/
