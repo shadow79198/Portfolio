@@ -59,20 +59,24 @@ threeButtonProject = document.querySelector("#project-three-button")
 fourTextProject = document.querySelector("#project-four-text")
 fourButtonProject = document.querySelector("#project-four-button")
 
-oneButtonProject.addEventListener("mouseover", function() {
+oneButtonProject.addEventListener("click", function() {
     oneTextProject.style.display = "block"
+    oneButtonProject.innerHTML = "<a href ='https://shadow79198.github.io/int-u4-project-23-24-starter-code/'>Start Program </a>"
 })
 
-twoButtonProject.addEventListener("mouseover", function() {
+twoButtonProject.addEventListener("click", function() {
     twoTextProject.style.display = "block"
+    twoButtonProject.innerHTML = "<a href ='https://github.com/shadow79198/AP-CSP'>Start Program </a>"
 })
 
-threeButtonProject.addEventListener("mouseover", function() {
+threeButtonProject.addEventListener("click", function() {
     threeTextProject.style.display = "block"
+    threeButtonProject.innerHTML = "<a href ='https://shadow79198.github.io/int-u2-project-starter-code-3/'>Start Program </a>"
 })
 
-fourButtonProject.addEventListener("mouseover", function() {
+fourButtonProject.addEventListener("click", function() {
     fourTextProject.style.display = "block"
+    fourButtonProject.innerHTML = "<a href ='https://replit.com/@shadow79198/Trivia-Code'>Start Program </a>"
 })
 
 //SQL part

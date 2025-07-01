@@ -3,17 +3,27 @@ ul{
     flex-direction:row;
     justify-content: space-around;
     list-style-type: none;
+    overflow: hidden;
+    margin-block-start: 1px;
+    margin-block-end: 1px;
+    padding-inline-start: 1px;
+    position: sticky;
+    top: 0;
 }
 li{
-    margin-left: 20%;
-    margin-right: 20%;
-    margin: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    float: left;
+}
+li:hover{
+    background-color: white;
+    
 }
 body{
     color: #5C090E;
     background-color: #CAFFD0;
-    animation-name: startChange;
-    animation-duration: 8s;
 }
 
 .case-study, .about-me, .first{
@@ -40,11 +50,12 @@ body{
     height: 20%;
 }
 img{
-    width: 10%;
+    width: 15%;
 }
 html{
     margin:2%;
     margin-top: 0%;
+    font-family: "Kosugi Maru", sans-serif;
 }
 .open, .center-image{
     display: flex;
@@ -101,6 +112,11 @@ video{
     margin: 0%;
     border: 2px solid;
 
+}
+a, button, input{
+    text-decoration: none;
+    color: #5C090E;
+    font-family: "Kosugi Maru", sans-serif;
 }
     /* background-color: #1E212B;  black*/
             /* background-color: #4F66C6;  blue*/
