@@ -83,7 +83,7 @@ html{
     display: none;
 }
 h2{
-    font-size: 20px;
+    font-size: 30px;
 }
 video{
     width: 50%;
@@ -116,7 +116,7 @@ video{
 #color-given{
     background-color: initial;
     border: none;
-    width: 15%;
+    width: 20%;
 }
 .navegation{
     display: none;
@@ -130,6 +130,7 @@ a, button, input{
     text-decoration: none;
     color: #5C090E;
     font-family: "Kosugi Maru", sans-serif;
+    font-size: 20px;
 }
     /* background-color: #1E212B;  black*/
             /* background-color: #4F66C6;  blue*/
@@ -159,4 +160,7 @@ a, button, input{
 .open{
     text-align: center;
     margin-top: 15%;
+}
+p{
+    font-size: 20px;
 }
