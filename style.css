@@ -39,7 +39,7 @@ body{
 }
 .projects{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .projects p, .projects img, .projects video{
     padding-right: 5%;
@@ -57,7 +57,7 @@ html{
     margin-top: 0%;
     font-family: "Kosugi Maru", sans-serif;
 }
-.open, .center-image{
+.center-image{
     display: flex;
     justify-content: center; 
 }
@@ -68,12 +68,19 @@ html{
     filter: grayscale(1.0);
     height: 50%;
     width: 50%;
+    animation-name: notice-me;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes notice-me {
+    0%{border: #3D798A 10px solid;}
+    50%{ border: antiquewhite 10px solid;}
+    100%{border: red 10px solid;}
+}
+
 #errorMsg, .second-section button{
     display: none;
-}
-.text{
-    margin-right: 10%;
 }
 h2{
     font-size: 20px;
@@ -86,10 +93,16 @@ video{
     padding-left: 2%;
     display: none;
 }
-.input-part{
+.input-part, .output-part{
     display: flex;
     justify-content: flex-start;
     padding-left: 5%;
+}
+.output-part{
+    background-color:#faebd7;
+    padding-left: 0%;
+    border: #F0D598 5px solid;
+    display: none;
 }
 .videos{
     display: none;
@@ -103,7 +116,7 @@ video{
 #color-given{
     background-color: initial;
     border: none;
-    width: 12%;
+    width: 15%;
 }
 .navegation{
     display: none;
@@ -121,3 +134,29 @@ a, button, input{
     /* background-color: #1E212B;  black*/
             /* background-color: #4F66C6;  blue*/
             /* background-color:#E70E02; red */
+.looking-cool-one{
+    /* background-color: #55857F;
+    border: #3D798A, 4px, solid; */
+    background-color: #93CFFF;
+    border: black, 4px, solid;
+    padding: 1%;
+}
+.looking-cool-two{
+    /* background-color: #55857F;
+    border: #3D798A, 4px, solid; */
+    background-color: #37BA69;
+    border: black, 4px, solid;
+    padding: 1%;
+}
+.looking-cool-hidden{
+    /* background-color: #55857F;
+    border: #3D798A, 4px, solid; */
+    background-color: #B683FC;
+    border: black, 4px, solid;
+    padding: 1%;
+    margin-left: 2%;
+}
+.open{
+    text-align: center;
+    margin-top: 15%;
+}

@@ -18,8 +18,10 @@
             <li id="third-move">Contact Page</li>
         </ul>
     </nav>
+    <br>
     <!-- animation when they open the website -->
     <div class="open">
+        <h1>Be ready to find all the secrets</h1>
         <img class="startButton" src="images/startButton.png">
     </div>
 
@@ -30,7 +32,7 @@
                 <h1>William Rodriguez Cortez</h1>
                 <br>
             </div>
-            <div class="start-page">
+            <div class="start-page looking-cool-one">
                 <div>
                     <h2>Who am I?</h2>
                     <p>Hello, my name is William Rodriguez Cortez and I'm from El Salvador, I moved to the United States around 2 years ago. Some of the things I like are
@@ -40,7 +42,7 @@
                     <p>Recently I've been doing the Nextech Catapult program, a summer internship that consists of
                         teaching the younger generation coding skills that will be useful for later on in their coding
                         career, outside of that I also decided to take summer classes so now I'm doing AP Government & Politics and
-                        AP Macroeconomics</p>
+                        AP Macroeconomics.</p>
                 </div>
                 <img src="images/Professional Photo.JPG" style="padding-right: 2%; padding-left: 5%;">
             </div>
@@ -58,33 +60,39 @@
     <div class="case-study">
         <!-- maybe do a dropdown menu and just use this to display every project, idk -->
         <h2>Who Should You Main in Super Smash Bros Ultimate</h2>
-        <div class="projects">
+        <div class="projects looking-cool-two">
             <p id="project-one-text">This is a project I did on the Catapult program, it took me some time to make the code how I wanted it to be. It was our first project using Javascript so I decided to challenge myself
                 by making the end screen change depending on the final score that the user gave.
             </p>
             <button id="project-one-button">Click here to give power to the project</button>
             <img src="images/smash.png">
         </div>
+        <br>
+        <br>
         <h2>Spanish Conjugator</h2>
-        <div class="projects">
+        <div class="projects looking-cool-one">
             <p id="project-two-text">This is my AP Computer Science Principle portfolio needed for the AP exam, It took me a while to code because I decided to choose the harder of the two option, that being using a text langugage instead of block based language.
-                In the end I like how I left the project and I would spend more time to adjust some of the code
+                In the end I like how I left the project and I would spend more time to adjust some of the code.
             </p>
             <button id="project-two-button">Click here to give power to the project</button>
             <video controls>
                 <source src="videos/conjugator.mp4" type="video/mp4">
             </video>
         </div>
+        <br>
+        <br>
         <h2>Deadly Risk Webpage</h2>
-        <div class="projects">
-            <p id="project-three-text">First project I did on the Catapult program, this one was only using HTML and CSS and it took me a while because of I didn't fully understand how to use CSS but I like the end result of the program</p>
+        <div class="projects looking-cool-two">
+            <p id="project-three-text">First project I did on the Catapult program, this one was only using HTML and CSS and it took me a while because of I didn't fully understand how to use CSS but I like the end result of the program.</p>
             <button id="project-three-button">Click here to give power to the project</button>
             <img src="images/gun.png">
         </div>
+        <br>
+        <br>
         <h2>PTSD Trivia Quiz</h2>
-        <div class="projects">
+        <div class="projects looking-cool-one">
             <p id="project-four-text">This project was made with colaboration of the iDEW program. This was one of my favorites projects because of two reasons: First being that I met one of my best friends via this project. I don't claim I did this project on my own at all
-                , she helped me a lot for this project with her ideas and everything. Second thing I liked about this project is how <strong id="purple">purple</strong> has become one of my favorite colors, it just looks good on most stuff
+                , she helped me a lot for this project with her ideas and everything. Second thing I liked about this project is how <strong id="purple">purple</strong> has become one of my favorite colors, it just looks good on most stuff.
             </p>
             <button id="project-four-button">Click here to give power to the project</button>
             <img src="images/trauma.png">
@@ -98,33 +106,33 @@
         </div>
         <div class="information">
             <!-- Display on a row -->
-            <div class="divide-card">
+            <div class="divide-card" style="padding-right: 5%;">
                 <h2>Biography about my life</h2>
-                <p class="text">As previously stated, I moved to the United States at around 2 years ago and it has changed who I am,
+                <p class="text looking-cool-one">As previously stated, I moved to the United States at around 2 years ago and it has changed who I am,
                     Before whenever someone would ask me what I wanted to do with my life I would answer I don't know;
                     It would overwhelm me to think of what I have to do for my future, However now that I moved from that mentality I have something to say,
                     I tend to get scared of what is next on my life but it doesn't stop me now. Being in the US has allowed me to find who I am and
                     what it means to live your life. I have many stories I could talk about it would go until the <strong id="blue">blue</strong> sky turned gray.
-                    If you wish to talk more with me look for my contact information below
+                    If you wish to talk more with me look for my contact information below.
                 </p>
             </div>
             <div class="divide-card">
                 <h2>Programming languages learned</h2>
-                <p class="text">I learned some basic coding languages such as HTML, CSS, Javascript, etc. At school they also taught
-                    me some other coding languages such as Block based coding, Python, SQL, and soon I'll learn Java</p>
+                <p class="text looking-cool-two">I learned some basic coding languages such as HTML, CSS, Javascript, etc. At school they also taught
+                    me some other coding languages such as Block based coding, Python, SQL, and soon I'll learn Java.</p>
             </div>
         </div>
         <br>
         <div class="second-section">
-            <div style="padding-left: 5%; padding-right: 5%;">
+            <div style="padding-left: 5%; padding-right: 5%;" class="looking-cool-one">
                 <h3>CREATE TABLE colorMeaning (color TEXT, meaning TEXT);</h3>
                 <div class="input-part">
-                    <p>SELECT * FROM colorMeaning WHERE color == <input id="color-given">;</p>
+                    <p>SELECT * FROM colorMeaning WHERE color == <input id="color-given" placeholder="color name">;</p>
                 </div>
                 <button id="SQL-run">Run</button>
             </div>
-            <div class="input-part">
-                <p id="SQL-color"></p><p id="SQL-meaning"></p>
+            <div class="output-part" style="margin-left: 5%;">
+                <p id="SQL-color" style="padding-left: 1%;"></p><p id="SQL-meaning"></p>
             </div>
         </div>
         <br>
@@ -137,13 +145,19 @@
                 <source id="clips" src="videos/funny.mp4" type="video/mp4">
             </video>
             <button id="button-right">></button>
-            <p class="last-hide">Part of my life has been focusing around having a twin, which people have seen as a benefit but this also has caused some internal conflicts with myself and those around me. But something I overlooked by accident is just how much I enjoy having a twin.
+            <p class="last-hide looking-cool-hidden">Part of my life has been focusing around having a twin, which people have seen as a benefit but this also has caused some internal conflicts with myself and those around me. But something I overlooked by accident is just how much I enjoy having a twin.
                 While at times it can get annoying, its honestly something i that also makes me unique. I left some clips I've done with my twin on this part because its symbolic for me in a way, before I saw those memories as foggy because of them being made with him,
-                but now that I start to appreciate who he is on my life those colorless memories have color now
+                but now that I start to appreciate who he is on my life those colorless memories have color now.
             </p>
         </div>
+        <br>
+        <br>
         <div class="=contact-info">
-            <h1>Contact information</h1>
+            <h1 style="text-align: center;">Contact information</h1>
+            <div class="links output-part" style="display: block;">
+                <a href="https://www.linkedin.com/in/william-rodriguez-564582372/?trk=PROFILE_DROP_DOWN"><img src="images/linkedin.webp" style="padding: 1%; padding-right: 30%; padding-left: 20%;"></a>
+                <a href="https://github.com/shadow79198"><img src="images/github.png" style="padding: 1%;"></a>
+            </div>
         </div>
     </div>
 </body>

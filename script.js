@@ -43,7 +43,7 @@ msgError = document.querySelector("#errorMsg")
 avaliableNot =  document.querySelector(".not-avaliable")
 
 avaliableNot.addEventListener("click", function() {
-    alert("It seems that the video is not working properly, it must be because of the missing colors in the image, in the whole webpage the creator has left some colors for you to find them, in the end you will be able to see what each color means. Here is a gift for you, the color green")
+    alert("It seems that the video is not working properly, it must be because of the missing colors in the image, in the whole webpage the creator has left some colors for you to find them, in the end you will be able to see what each color means. Here is a gift for you, the color green.")
     greenCheck = true
     console.log(greenCheck)
 })
@@ -85,20 +85,27 @@ givenColor = document.querySelector("#color-given")
 RunSQL = document.querySelector("#SQL-run")
 colorSQL = document.querySelector("#SQL-color")
 meaningSQL = document.querySelector("#SQL-meaning")
+partOutput = document.querySelector(".output-part")
 
 RunSQL.addEventListener("click", function() {
     check = givenColor.value
     if(check === "green" && greenCheck === true){
+        partOutput.style.display = "flex"
+        partOutput.style.justifyContent = "flex-start"
         colorSQL.innerHTML = "green|"
-        meaningSQL.innerHTML = "I chose green because it has been my favorite colors for multiple years, its always associated with nature but for me its also of peace, internal peace to be more specific. Sometimes I just like something because it has green on it, is just that important for me"
+        meaningSQL.innerHTML = "I chose green because it has been my favorite colors for multiple years, its always associated with nature but for me its also of peace, internal peace to be more specific. Sometimes I just like something because it has green on it, is just that important for me."
     }else if (check === "green" && greenCheck === false){
         alert("I don't know how you know this is a color but go find it")
     }else if (check === "purple" && purpleCheck === true){
+        partOutput.style.display = "flex"
+        partOutput.style.justifyContent = "flex-start"
         colorSQL.innerHTML = "purple|"
-        meaningSQL.innerHTML = "Purple is the favorite color of one of my friends, and honestly its also becoming mine. When I see color it reminds me of past wounds, more specific of bruises, but like those wounds it is that memory that makes you stand up and fight again"
+        meaningSQL.innerHTML = "Purple is the favorite color of one of my friends, and honestly its also becoming mine. When I see color it reminds me of past wounds, more specific of bruises, but like those wounds it is that memory that makes you stand up and fight again."
     }else if (check == "purple" && purpleCheck === false){
         alert("I don't know how you know this is a color but go find it")
     }else if (check === "blue" && blueCheck === true){
+        partOutput.style.display = "flex"
+        partOutput.style.justifyContent = "flex-start"
         colorSQL.innerHTML = "blue|"
         meaningSQL.innerHTML = "Reason why I chose blue it was because it reminds me of two things. First is my favorite artist, Ado, I usually hear one of her songs everyday because is just that good for me. Second reason why is because it reminds me of being free, of not worrying about what others would say about what you like or who you are, etc."
     }else if (check === "blue" && blueCheck === false){
@@ -185,7 +192,7 @@ clips = document.querySelector("#clips")
 
 rightButton.addEventListener("click", function() {
     pos++
-    if(pos>2){
+    if(pos>show.length - 1){
         pos = 0
     }
     clips.src = show[pos]
@@ -196,7 +203,7 @@ rightButton.addEventListener("click", function() {
 leftButton.addEventListener("click", function() {
     pos--
     if(pos<0){
-        pos = 2
+        pos = show.length - 1
     }
     clips.src = show[pos]
     videos.load()
